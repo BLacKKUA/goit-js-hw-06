@@ -30,3 +30,6 @@ button {
   flex-direction: row;
   flex-wrap: nowrap;
 }
+.imageStyle {
+  width: 425px;
+}

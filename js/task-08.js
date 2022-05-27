@@ -17,11 +17,12 @@ function processingLoginForm(event) {
          password
       }
       console.log(formData);
+         formElementsRef.email.value = '';
+         formElementsRef.password.value = '';
    }
-   formElementsRef.email.value = '';
-   formElementsRef.password.value = '';
 
-   // Дядічка checker :) поясніть в коментарі
+
+   // Тьотічка checker :) поясніть в коментарі
    // чому якщо я юзаю mail = '' не працює, 
    // а вот formElementsRef.email.value = '' працює
 }
