@@ -27,7 +27,9 @@ const galleryEl = document.querySelector('.gallery')
 // // console.log(array)
 // galleryEl.append(...array)
 
-const element = images.map(({url, alt}) => `<li class="flex"><img class="imageStyle" src='${url}' alt='${alt}'></li>`)
-// console.log(element);
+const element = images.map(({ url, alt }) =>
+  `<li class="flex"><img class="imageStyle" src='${url}' alt='${alt}'></li>`).join('')
+console.log(element);
 
-galleryEl.insertAdjacentHTML('beforeend', element)
+let tests = galleryEl.insertAdjacentHTML('beforebegin', element)
+console.log(tests);
