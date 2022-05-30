@@ -31,5 +31,5 @@ const element = images.map(({ url, alt }) =>
   `<li class="flex"><img class="imageStyle" src='${url}' alt='${alt}'></li>`).join('')
 console.log(element);
 
-let tests = galleryEl.insertAdjacentHTML('beforebegin', element)
+let tests = galleryEl.insertAdjacentHTML('afterbegin', element)
 console.log(tests);
